@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <header>
-            <nav className="fixed top-0 flex items-center justify-between w-full h-12 px-4 bg-teal-300">
+            <nav className="fixed top-0 flex items-center justify-between w-full h-12 px-4">
                 <h1 className="text-xl font-semibold">LOGO</h1>
                 <ul className={`absolute left-0 top-0 flex flex-col items-center justify-center w-screen gap-4 text-2xl transition bg-teal-300 menu ${menu ? '' : 'translate-x-full'} h-svh`}>
                     <li className='px-4 py-2'><Link to="/" onClick={toggleMenu}>Inicio</Link> </li>

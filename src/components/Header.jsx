@@ -10,7 +10,7 @@ function Header() {
         <header>
             <nav className="fixed top-0 flex items-center justify-between w-full h-12 px-4">
                 <h1 className="text-xl font-semibold">LOGO</h1>
-                <ul className={`absolute left-0 top-0 flex flex-col items-center justify-center w-screen gap-4 text-2xl text-orange-500 transition bg-slate-800 menu ${menu ? '' : 'translate-x-full'} h-svh`}>
+                <ul className={`absolute left-0 top-0 flex flex-col items-center justify-center w-screen gap-4 text-3xl text-orange-500 transition bg-zinc-900 menu ${menu ? '' : 'translate-x-full'} h-svh`}>
                     <li className='px-4 py-2'><Link to="/" onClick={toggleMenu}>Inicio</Link> </li>
                     <li className='px-4 py-2'><Link to="/carta" onClick={toggleMenu}>Carta</Link> </li>
                     <li className='px-4 py-2'><Link to="/contacto" onClick={toggleMenu}>Contacto</Link> </li>

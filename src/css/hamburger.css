@@ -35,5 +35,5 @@
 .hb3.active {
     top: 15px;
     rotate: calc(-45deg - 360deg);
-    background: red;
+    background: rgb(249 115 22);
 }

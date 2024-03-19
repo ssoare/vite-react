@@ -29,7 +29,7 @@ function Tapas() {
                 <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between bg-gradient-to-br from-gray-100 to-transparent
                 hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all text-pretty">
                     <img className="w-full h-120"
-                    src="src/images/burger.png" alt="imagen" />
+                    src="dist/images/burger.png" alt="imagen" />
                     <div className="flex justify-between items-center flex-grow">
                         <div className='basis-5/6'>
                             <h3 className="text-lg font-semibold">{details.id}. {name}</h3>

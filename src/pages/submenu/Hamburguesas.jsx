@@ -20,7 +20,6 @@ function Hamburguesas() {
                         </div>
                         <p>{details.price.toFixed(2)}€</p>
                     </div>
-                    {/* Add image rendering here if available */}
                 </article>   
             ))}
         </>

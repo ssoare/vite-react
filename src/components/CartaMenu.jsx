@@ -13,7 +13,7 @@ function CartaMenu() {
     return(
         <>
             <nav>
-                <ul className="flex gap-2 px-4 overflow-auto whitespace-nowrap">
+                <ul className="flex gap-2 px-4 overflow-auto whitespace-nowrap lg:justify-center">
                     <li onClick={() => setSubmenu('tapas')}
                         className={
                             submenu === 'tapas' 
@@ -63,7 +63,7 @@ function CartaMenu() {
                 </ul>
             </nav>
             
-            <section className='m-4 mt-8 border-2 rounded-lg p-4 shadow-lg'>
+            <section className='flex gap-4 p-4 mt-8 flex-wrap justify-center'>
                 { submenu === 'tapas' && <Tapas />}
                 { submenu === 'ensaladas' && <Ensaladas />}
                 { submenu === 'torraetas' && <Torraetas />}

@@ -1,5 +1,5 @@
 const tapa = {
-    'Patatas fritas' : { id: 1 , description: '', price: 6.25 , image: '' },
+    'Patatas fritas' : { id: 1 , description: 'hola', price: 6.25 , image: '' },
     'Patatas bravas' : { id: 2 , description: '', price: 7.50 , image: '' },
     'Patatas con queso, bacon y salsa césar' : { id: 3 , description: '', price: 8.95 , image: '' },
     'Ensaladilla rusa' : { id: 4 , description: '', price: 6.95 , image: '' },
@@ -26,12 +26,17 @@ function Tapas() {
     return(
         <>
             {Object.entries(tapa).map(([name, details]) => (
-                <article className="flex mb-8 justify-between items-center">
-                    <div className="basis-4/5">
-                        <h3 className="text-xl font-semibold">{details.id}. {name}</h3>
-                        <p className="italic text-gray-700">{details.description}</p>
+                <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between backdrop-saturate-200
+                hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all text-pretty">
+                    <img className="w-full"
+                    src="src/images/burger.png" alt="imagen" />
+                    <div className="flex justify-between items-center flex-grow">
+                        <div className='basis-5/6'>
+                            <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
+                            <p className="italic text-gray-600">{details.description}</p>
+                        </div>
+                        <p>{details.price.toFixed(2)}€</p>
                     </div>
-                    <p>{details.price.toFixed(2)}€</p>
                     {/* Add image rendering here if available */}
                 </article>   
             ))}

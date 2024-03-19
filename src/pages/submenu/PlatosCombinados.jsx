@@ -23,27 +23,41 @@ const platosCombinados = {
 function PlatosCombinados() {
     return(
         <>
-            <h1 className='text-center text-2xl font-semibold'>Nuestro Platos</h1>
-            <hr className='my-4 w-6/12 mx-auto' />
+            <div className='flex-col w-screen'>
+                <h1 className='text-center text-2xl font-semibold'>Nuestro Platos</h1>
+                <hr className='my-4 w-6/12 mx-auto' />
+            </div>
             {Object.entries(platosCombinados).map(([name, details]) => (
-                <article className="flex mb-8 justify-between items-center">
-                    <div className="basis-4/5">
-                        <h3 className="text-xl font-semibold">{details.id}. {name}</h3>
-                        <p className="italic text-gray-700">{details.description}</p>
+                <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
+                hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
+                    <img className="w-full"
+                    src="src/images/burger.png" alt="imagen" />
+                    <div className="flex justify-between items-center flex-grow">
+                        <div className='basis-5/6'>
+                            <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
+                            <p className="italic text-gray-600">{details.description}</p>
+                        </div>
+                        <p>{details.price.toFixed(2)}€</p>
                     </div>
-                    <p>{details.price.toFixed(2)}€</p>
                     {/* Add image rendering here if available */}
                 </article>
             ))}
-            <h1 className='text-center text-2xl font-semibold'>Platos infantiles</h1>
-            <hr className='my-4 w-6/12 mx-auto' />
+            <div className='flex-col w-screen'>
+                <h1 className='text-center text-2xl font-semibold'>Platos Infantiles</h1>
+                <hr className='my-4 w-6/12 mx-auto' />
+            </div>
             {Object.entries(platosCombinadosInfantil).map(([name, details]) => (
-                <article className="flex mb-8 justify-between items-center">
-                    <div className="basis-4/5">
-                        <h3 className="text-xl font-semibold">{details.id}. {name}</h3>
-                        <p className="italic text-gray-700">{details.description}</p>
+                <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
+                hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
+                    <img className="w-full"
+                    src="src/images/burger.png" alt="imagen" />
+                    <div className="flex justify-between items-center flex-grow">
+                        <div className='basis-5/6'>
+                            <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
+                            <p className="italic text-gray-600">{details.description}</p>
+                        </div>
+                        <p>{details.price.toFixed(2)}€</p>
                     </div>
-                    <p>{details.price.toFixed(2)}€</p>
                     {/* Add image rendering here if available */}
                 </article>
             ))}

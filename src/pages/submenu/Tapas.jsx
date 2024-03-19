@@ -1,3 +1,5 @@
+import '../../images/burger.png'
+
 const tapa = {
     'Patatas fritas' : { id: 1 , description: 'hola', price: 6.25 , image: '' },
     'Patatas bravas' : { id: 2 , description: '', price: 7.50 , image: '' },
@@ -26,7 +28,7 @@ function Tapas() {
     return(
         <>
             {Object.entries(tapa).map(([name, details]) => (
-                <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between bg-gradient-to-r from-cyan-500 to-blue-500
+                <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between bg-gradient-to-br from-gray-100 to-transparent
                 hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all text-pretty">
                     <img className="w-full h-120"
                     src="src/images/burger.png" alt="imagen" />

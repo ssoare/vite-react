@@ -5,7 +5,7 @@ const platosCombinados = {
     'Lomo, bacon y huevo': { id: 64, description: '', price: 10.50 , image: '' } ,
     'Lomo con salsa pimiento o roquefort': { id: 65, description: '', price: 10.00 , image: '' } ,
     'Pechuga y huevo': { id: 66, description: '', price: 10.00 , image: '' } ,
-    'Pechuga, queso, champinãones y cebolla frita': { id: 67, description: '', price: 10.95 , image: '' } ,
+    'Pechuga, queso, champiñones y cebolla frita': { id: 67, description: '', price: 10.95 , image: '' } ,
     'Pechuga a la pimiento': { id: 68, description: '', price: 10.50 , image: '' } ,
     'Alitas de pollo con salsa barbacoa': { id: 69, description: '', price: 10.00 , image: '' } ,
     'Bistec de ternera y huevo': { id: 70, description: '', price: 12.85 , image: '' } ,

@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className='mt-20'>
+      <main className='mt-12'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/carta" element={<Carta />} />

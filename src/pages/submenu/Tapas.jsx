@@ -1,5 +1,3 @@
-import '../../images/burger.png'
-
 const tapa = {
     'Patatas fritas' : { id: 1 , description: 'hola', price: 6.25 , image: '' },
     'Patatas bravas' : { id: 2 , description: '', price: 7.50 , image: '' },

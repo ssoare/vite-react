@@ -1,22 +1,3 @@
-/* 
-ENSALADAS
-18. ENSALADA DEL RINCÓN
-10,50
-(Lechuga variada, tomate, pepino, queso feta y aceitunas).
-19. ENSALADA DE LA CASA
-11,95
-(Lechuga variada, tomate, zanahoria, remolacha, atún, huevo y maíz).
-20. ENSALADA DE QUESO DE CABRA
-11,95
-(Lechuga variada, queso de cabra, pasas, mermelada de tomate y vinagre balsámico).
-21. ENSALADA DE MARISCO
-12,00
-(Lechuga variada, gambas, marisco, caviar y salsa rosa).
-22. ENSALADA CÉSAR
-11,50
-(Lechuga variada, pollo, queso y salsa César).
-*/
-
 const ensalada = {
     'Ensalada del rincón': { id: 18 , description: 'Lechuga variada, tomate, pepino, queso feta y aceitunas', price: 10.50 , image: '' },
     'Ensalada de la casa': { id: 19 , description: 'Lechuga variada, tomate, zanahoria, remolacha, atün, huevo y maíz', price: 11.95 , image: '' },

@@ -62,17 +62,16 @@ function CartaMenu() {
                         }>Comida Vegetariana</li>
                 </ul>
             </nav>
-            
-            <section className='flex gap-4 p-4 mt-8 flex-wrap justify-center'>
-                { submenu === 'tapas' && <Tapas />}
-                { submenu === 'ensaladas' && <Ensaladas />}
-                { submenu === 'torraetas' && <Torraetas />}
-                { submenu === 'sandwiches' && <Sandwiches />}
-                { submenu === 'bocadillos' && <Bocadillos />}
-                { submenu === 'hamburguesas' && <Hamburguesas />}
-                { submenu === 'platos combinados' && <PlatosCombinados />}
-                { submenu === 'comida vegetariana' && <ComidaVegetariana />}
-            </section>
+                <section className='flex gap-4 p-4 mt-8 justify-center flex-wrap'>
+                    { submenu === 'tapas' && <Tapas />}
+                    { submenu === 'ensaladas' && <Ensaladas />}
+                    { submenu === 'torraetas' && <Torraetas />}
+                    { submenu === 'sandwiches' && <Sandwiches />}
+                    { submenu === 'bocadillos' && <Bocadillos />}
+                    { submenu === 'hamburguesas' && <Hamburguesas />}
+                    { submenu === 'platos combinados' && <PlatosCombinados />}
+                    { submenu === 'comida vegetariana' && <ComidaVegetariana />}
+                </section>
         </>
     )
 }

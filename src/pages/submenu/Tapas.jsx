@@ -28,7 +28,7 @@ function Tapas() {
             {Object.entries(tapa).map(([name, details]) => (
                 <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between backdrop-saturate-200
                 hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all text-pretty">
-                    <img className="w-full"
+                    <img className="w-full h-120"
                     src="src/images/burger.png" alt="imagen" />
                     <div className="flex justify-between items-center flex-grow">
                         <div className='basis-5/6'>

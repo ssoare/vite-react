@@ -17,7 +17,7 @@ function Ensaladas() {
                     <img className="w-full"
                     src="src/images/burger.png" alt="imagen" />
                     <div className="flex justify-between items-center flex-grow">
-                        <div className='basis-5/6'>
+                        <div className='basis-4/5'>
                             <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
                             <p className="italic text-gray-500">{details.description}</p>
                         </div>

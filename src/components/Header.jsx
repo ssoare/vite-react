@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <header className='flex justify-center'>
-            <nav className="fixed top-0 flex items-center justify-between w-full h-12 px-4 lg:max-w-screen-xl">
+            <nav className="fixed top-0 flex items-center justify-between w-full h-12 px-4 lg:max-w-screen-xl bg-white/90">
                 <Link to="">
                     <h1 className='flex flex-col italic font-semibold'>El Rincón <span className='text-orange-500'>del Bocata</span></h1>
                 </Link>

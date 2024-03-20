@@ -7,7 +7,7 @@ function Card({name, image='', price, description='', id}) {
                 src={image} />
             <div className='flex justify-between items-center mt-20'>
                 <div className='basis-4/5'>
-                    <h3 className='text-lg font-semibold'>{id} {name}</h3>
+                    <h3 className='text-lg font-semibold'>{id}. {name}</h3>
                     <p className='italic text-gray-600'>{description}</p>
                 </div>
                 <p>{price}€</p>

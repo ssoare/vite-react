@@ -62,7 +62,7 @@ function CartaMenu() {
                         }>Comida Vegetariana</li>
                 </ul>
             </nav>
-                <section className='flex gap-4 p-4 mt-8 justify-center flex-wrap'>
+                <section className='flex gap-4 p-4 mt-8 justify-center flex-wrap last:grow'>
                     { submenu === 'tapas' && <Tapas />}
                     { submenu === 'ensaladas' && <Ensaladas />}
                     { submenu === 'torraetas' && <Torraetas />}

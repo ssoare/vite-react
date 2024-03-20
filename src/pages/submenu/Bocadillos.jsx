@@ -1,53 +1,183 @@
-const bocadillo = {
-    'Longanizas, tomate y pimiento frito': { id: 35 , description: '', price: 6.85 , image: '' },
-    'Jamón serrano con tomate': { id: 36 , description: '', price: 6.35 , image: '' },
-    'Jamón serrano, queso y tomate': { id: 37 , description: '', price: 6.85 , image: '' },
-    'Calamares con ajoaceite': { id: 38 , description: '', price: 7.50 , image: '' },
-    'Sepia a la plancha con salsa verde': { id: 39 , description: '', price: 7.80 , image: '' },
-    'Atún con anchoas': { id: 40 , description: '', price: 7.25 , image: '' },
-    'Bacalao desmigado con aceitunas': { id: 41 , description: '', price: 6.95 , image: '' },
-    'Lomo, queso y huevos': { id: 42 , description: '', price: 6.85 , image: '' },
-    'Lomo, queso, lechuga, tomate y cebolla frita': { id: 43 , description: '', price: 7.25 , image: '' },
-    'Lomo, queso, bacon, lechuga y tomate': { id: 44 , description: '', price: 7.35 , image: '' },
-    'Lomo, jamón a la plancha, pimiento frito y tomate': { id: 45 , description: '', price: 7.50 , image: '' },
-    'Lomo, queso, paté, bacon, huevos, lechuga, tomate y cebolla frita': { id: 46 , description: '', price: 7.95 , image: '' },
-    'Bacon, queso y tomate': { id: 47 , description: '', price: 6.80 , image: '' },
-    'Bacon, queso, huevo y tomate': { id: 48 , description: '', price: 7.00 , image: '' },
-    'Bacon, queso y sobrasada': { id: 49 , description: '', price: 6.95 , image: '' },
-    'Paté, queso y tomate': { id: 50 , description: '', price: 6.90 , image: '' },
-    'Paté, queso, huevo y tomate': { id: 51 , description: '', price: 6.95 , image: '' },
-    'Paté, queso, bacón y tomate': { id: 52 , description: '', price: 7.25 , image: '' },
-    'Pechuga, tomate y mayonesa': { id: 53 , description: '', price: 6.95 , image: '' },
-    'Pechuga, queso y mayonesa': { id: 54 , description: '', price: 6.95 , image: '' },
-    'Pechuga, jamón a la plancha, lechuga, mayonesa y cebolla frita': { id: 55 , description: '', price: 7.95 , image: '' },
-    'Pechuga, bacón, huevo, queso y tomate': { id: 56 , description: '', price: 7.85 , image: '' },
-    'Ternera, tomate y ajoaceite': { id: 57 , description: '', price: 7.85 , image: '' },
-    'Ternera, queso y mayonesa': { id: 58 , description: '', price: 7.85 , image: '' },
-    'Ternera, jamón a la plancha, queso, ajoaceite y pimiento frito': { id: 59 , description: '', price: 7.95 , image: '' },
-    'Tortilla francesa con tomate' : { id: 60 , description: '', price: 6.50 , image: '' },
-    'Tortilla al gusto (jamon, atun o queso)': { id: 61 , description: '', price: 6.95 , image: '' },
-    'Tortilla de gambas con ajoaceite': { id: 62 , description: '', price: 7.95 , image: '' },
-    'Tortilla de patatas con tomate o ajoaceite': { id: 63 , description: '', price: 6.35 , image: '' },
-}
-
+import Card from "../../components/Card";
 
 function Bocadillos() {
     return(
         <>
-            {Object.entries(bocadillo).map(([name, details]) => (
-                <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
-                hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
-                    <img className="w-full"
-                    src="src/images/burger.png" alt="imagen" />
-                    <div className="flex justify-between items-center flex-grow">
-                        <div className='basis-5/6'>
-                            <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
-                            <p className="italic text-gray-600">{details.description}</p>
-                        </div>
-                        <p>{details.price.toFixed(2)}€</p>
-                    </div>
-                </article>   
-            ))}
+            <Card id = '35'
+                name = 'Longanizas, tomate y pimiento frito'
+                description = ''
+                price = '6,85'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '36'
+                name = 'Jamón serrano con tomtate'
+                description = ''
+                price = '6,35'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '37'
+                name = 'Jamón serrano, queso y tomate'
+                description = ''
+                price = '6,85'
+                image = 'src/images/burger.png'
+            />    
+            <Card id = '38'
+                name = 'Calamares con ajoaceite'
+                description = ''
+                price = '7,50'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '39'
+                name = 'Sepia a la plancha con salsa verde'
+                description = ''
+                price = '7,80'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '40'
+                name = 'Atún con anchoas'
+                description = ''
+                price = '7,25'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '41'
+                name = 'Bacalao desmigado con aceitunas'
+                description = ''
+                price = '6,95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '42'
+                name = 'Lomo, queso y huevos'
+                description = ''
+                price = '6,85'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '43'
+                name = 'Lomo, queso, lechuga, tomate y cebolla frita'
+                description = ''
+                price = '7,25'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '44'
+                name = 'Lomo, queso, lechuga y tomate'
+                description = ''
+                price = '7,35'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '45'
+                name = 'Lomo, jamón a la plancha, pimiento frito y tomate'
+                description = ''
+                price = '7,50'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '46'
+                name = 'Lomo, queso, paté, bacon, huevos, lechuga, tomate y cebolla frita'
+                description = ''
+                price = '7,95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '47'
+                name = 'Bacon, queso y tomate'
+                description = ''
+                price = '6,80'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '48'
+                name = 'Bacon, queso, huevo y tomate'
+                description = ''
+                price = '7,00'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '49'
+                name = 'Bacon, queso y sobrasada'
+                description = ''
+                price = '6,95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '50'
+                name = 'Paté, queso y tomate'
+                description = ''
+                price = '6,90'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '51'
+                name = 'Paté, queso, huevo y tomate'
+                description = ''
+                price = '6,95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '52'
+                name = 'Paté, queso, bacon y tomate'
+                description = ''
+                price = '7,25'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '53'
+                name = 'Pechuga, tomate y mayonesa'
+                description = ''
+                price = '6,95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '54'
+                name = 'Pechuga, queso y mayonesa'
+                description = ''
+                price = '6,95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '55'
+                name = 'Pechuga, jamón a la plancha, lechuga, mayonesa y cebolla frita'
+                description = ''
+                price = '7,95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '56'
+                name = 'Pechuga, bacon, huevo, queso y tomate'
+                description = ''
+                price = '7,85'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '57'
+                name = 'Ternera, tomate y ajoaceite'
+                description = ''
+                price = '7,85'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '58'
+                name = 'Ternera, queso y mayonesa'
+                description = ''
+                price = '7,85'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '59'
+                name = 'Ternera, jamón a la plancha, queso, ajoaceite y pimiento frito'
+                description = ''
+                price = '7.95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '60'
+                name = 'Tortilla francesa con tomate'
+                description = ''
+                price = '6.50'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '61'
+                name = 'Tortilla al gusto'
+                description = 'jamón, atún o queso'
+                price = '6.95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '62'
+                name = 'Tortilla de gambas con ajoaceite'
+                description = ''
+                price = '7.95'
+                image = 'src/images/burger.png'
+            />
+            <Card id = '63'
+                name = 'Tortilla de patatas con tomate o ajoaceite'
+                description = ''
+                price = '6.35'
+                image = 'src/images/burger.png'
+            />
+
         </>
     )
 }

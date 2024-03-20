@@ -16,17 +16,17 @@ function Header() {
                                 ${menu ? '' : 'translate-x-full'} h-svh
                                 lg:translate-x-0 lg:size-auto lg:static lg:flex-row lg:bg-transparent lg:text-black lg:text-2xl`}>
                     <li className='px-4 py-2'>
-                        <Link className='lg:after:block lg:after:w-full lg:after:bg-orange-500 lg:after:h-px lg:after:scale-0 lg:hover:after:scale-100 after:transition-all' 
+                        <Link className='lg:after:block lg:after:w-full lg:after:bg-black lg:after:h-px lg:after:scale-0 lg:hover:after:scale-100 after:transition-all' 
                                 to="" onClick={toggleMenu}>Inicio
                         </Link> 
                     </li>
                     <li className='px-4 py-2'>
-                        <Link className='lg:after:block lg:after:w-full lg:after:bg-orange-500 lg:after:h-px lg:after:scale-0 lg:hover:after:scale-100 after:transition-all' 
+                        <Link className='lg:after:block lg:after:w-full lg:after:bg-black lg:after:h-px lg:after:scale-0 lg:hover:after:scale-100 after:transition-all' 
                                 to="carta" onClick={toggleMenu}>Carta
                         </Link> 
                     </li>
                     <li className='px-4 py-2'>
-                        <Link className='lg:after:block lg:after:w-full lg:after:bg-orange-500 lg:after:h-px lg:after:scale-0 lg:hover:after:scale-100 after:transition-all' 
+                        <Link className='lg:after:block lg:after:w-full lg:after:bg-black lg:after:h-px lg:after:scale-0 lg:hover:after:scale-100 after:transition-all' 
                                 to="contacto" onClick={toggleMenu}>Contacto
                         </Link> 
                     </li>

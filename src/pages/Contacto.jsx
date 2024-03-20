@@ -5,7 +5,7 @@ function Contacto() {
         <>
             <section id='contacto'
                     className="grid items-center justify-center text-center 
-                            lg:gap-20 lg:mx-20">
+                            lg:gap-20 lg:mx-20 lg:grid lg:grid-cols-3">
                 <article className="border-b-2 py-12 mx-4 
                                     lg:border-y-2">
                     <h2 className='text-3xl mb-4'>Llámanos: </h2>

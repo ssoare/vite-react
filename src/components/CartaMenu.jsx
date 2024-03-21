@@ -13,7 +13,7 @@ function CartaMenu() {
     const [submenu, setSubmenu] = useState('tapas')
     return(
         <>
-            <nav className='mt-20'>
+            <nav className='mt-20 '>
                 <ul className="menu flex gap-2 px-4 overflow-auto whitespace-nowrap xl:justify-center">
                     <li onClick={() => setSubmenu('tapas')}
                         className={

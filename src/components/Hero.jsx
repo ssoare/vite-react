@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Hero() {
     return(
         <>
-            <div className="hero text-4xl flex flex-col items-center justify-center gap-8">
+            <section className="hero text-4xl flex flex-col items-center justify-center gap-8">
                 <h1>El Rincón del Bocata</h1>
                 
                 <Link to='contacto'>
@@ -12,7 +12,7 @@ function Hero() {
                     </button>
                 </Link>
                 
-            </div>
+            </section>
         </>
     )
 }

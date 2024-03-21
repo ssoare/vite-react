@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({name, image='', price, description='', id}) {
+function Card({name, image='src/images/burger.png', price, description='', id}) {
     return(
         <article className='w-[300px] border-2 rounded-lg shadow-lg p-4'>
             <img className='' 

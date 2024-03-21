@@ -20,7 +20,7 @@ function Contacto() {
                                     lg:border-y-2">
                     <h2 className='text-3xl mb-4'>Whatsapp</h2>
                     <a className="text-blue-500 p-4 text-lg font-semibold flex items-center gap-4 justify-center"
-                        href="whatsapp:+34964964964"><IoLogoWhatsapp className=' fill-green-500 size-6' /> 964 964 964</a>
+                        href="https://wa.me/964964964"><IoLogoWhatsapp className=' fill-green-500 size-6' /> 964 964 964</a>
                 </article>
                 <article className="border-b-2 py-12 mx-4 
                                     lg:border-y-2">

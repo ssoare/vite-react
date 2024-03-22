@@ -5,7 +5,8 @@ export default function ComidaVegetariana() {
         return(
         <>
             <h1 className="text-center text-2xl font-semibold underline w-screen"> Tapas </h1> 
-            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4">
+            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4
+                                lg:flex lg:flex-wrap lg:justify-center">
                 <Card id = '110'
                     name = 'Longaniza vegetal, tortilla francesa y patatas'
                     price = '10.95'
@@ -49,7 +50,8 @@ export default function ComidaVegetariana() {
             </section>  
 
             <h1 className="text-center text-2xl mt-12 font-semibold underline w-screen"> Ensaladas </h1> 
-            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4">
+            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4
+                                lg:flex lg:flex-wrap lg:justify-center">
                 <Card id = '93'
                     name = 'Ensalada de la casa'
                     price = '11.95'
@@ -65,7 +67,8 @@ export default function ComidaVegetariana() {
             </section>
 
             <h1 className="text-center text-2xl mt-12 font-semibold underline w-screen flex-grow"> Hamburguesas </h1> 
-            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4">
+            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4
+                                lg:flex lg:flex-wrap lg:justify-center">
                 <Card id = '96'
                     name = 'Hamburguesa vegetariana, queso y huevo'
                     price = '7.50'
@@ -85,7 +88,8 @@ export default function ComidaVegetariana() {
             </section>
 
             <h1 className="text-center text-2xl mt-12 font-semibold underline w-screen"> Bocadillos </h1> 
-            <section className="grid grid-flow-col-dense overflow-auto w-screen gap-4 py-4">
+            <section className="grid grid-flow-col-dense overflow-auto w-screen gap-4 py-4
+                                lg:flex lg:flex-wrap lg:justify-center">
                 <Card id = '100'
                     name = 'Seitán, queso y huevo'
                     price = '7.50'

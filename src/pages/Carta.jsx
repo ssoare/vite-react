@@ -9,7 +9,7 @@ import Hamburguesas from '../pages/submenu/Hamburguesas'
 import PlatosCombinados from '../pages/submenu/PlatosCombinados'
 import ComidaVegetariana from '../pages/submenu/ComidaVegetariana'
 import Infantil from '../pages/submenu/Infantil'
-function CartaMenu() {
+function Carta() {
     const [submenu, setSubmenu] = useState('tapas')
     return(
         <>
@@ -84,4 +84,4 @@ function CartaMenu() {
     )
 }
 
-export default CartaMenu
+export default Carta

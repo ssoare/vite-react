@@ -26,6 +26,7 @@ export default function Ensaladas() {
                 name = 'Ensalada César'
                 description = 'Lechuga variada, pollo, queso y salsa César'
                 price = '11.50'
+                loading = 'lazy'
             />
         </>
     )

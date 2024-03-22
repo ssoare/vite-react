@@ -22,14 +22,17 @@ export default function Infantil() {
             <Card id = '84'
                 name = 'Nuggets de pollo con patatas'
                 price = '6,70'
+                loading = 'lazy'
             />
             <Card id = '85'
                 name = 'Tortilla francesa con longaniza'
                 price = '6,70'
+                loading = 'lazy'
             />
             <Card id = '86'
                 name = 'Huevos con patatas'
                 price = '6,70'
+                loading = 'lazy'
             />
         </>
     )

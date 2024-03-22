@@ -26,26 +26,32 @@ export default function ComidaVegetariana() {
                 <Card id = '114'
                     name = 'Seitán, queso, champiñones y cebolla frita'
                     price = '11.95'
+                    loading = 'lazy'
                 />
                 <Card id = '115'
                     name = 'Escalopines de seitán'
                     price = '10.95'
+                    loading = 'lazy'
                 />
                 <Card id = '116'
                     name = 'Escalope de soja'
                     price = '10.50'
+                    loading = 'lazy'
                 />
                 <Card id = '117'
                     name = 'Escalope de tofu'
                     price = '10.50'
+                    loading = 'lazy'
                 />
                 <Card id = '118'
                     name = 'Tofú a la plancha con salsa pimienta'
                     price = '10.50'
+                    loading = 'lazy'
                 />
                 <Card id = '119'
                     name = 'Parrillada de verdura'
                     price = '11.95'
+                    loading = 'lazy'
                 />
             </section>  
 
@@ -113,22 +119,27 @@ export default function ComidaVegetariana() {
                 <Card id = '105'
                     name = 'Tofú, huevo y tomate'
                     price = '7.25'
+                    loading = 'lazy'
                 />
                 <Card id = '106'
                     name = 'Tofú, huevo, lechuga, tomate y cebolla frita'
                     price = '7.25'
+                    loading = 'lazy'
                 />
                 <Card id = '107'
                     name = 'Tofú, queso, huevo, lechuga y pimiento frito'
                     price = '7.25'
+                    loading = 'lazy'
                 />
                 <Card id = '108'
                     name = 'Tortilla francesa, tomate y queso'
                     price = '6.50'
+                    loading = 'lazy'
                 />
                 <Card id = '109'
                     name = 'Tortilla de patatas con tomate o ajoaceite'
                     price = '6.35'
+                    loading = 'lazy'
                 />
             </section>
         </>

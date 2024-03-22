@@ -22,105 +22,129 @@ export default function Bocadillos() {
             <Card id = '39'
                 name = 'Sepia a la plancha con salsa verde'
                 price = '7,80'
+                loading = 'lazy'
             />
             <Card id = '40'
                 name = 'Atún con anchoas'
                 price = '7,25'
+                loading = 'lazy'
             />
             <Card id = '41'
                 name = 'Bacalao desmigado con aceitunas'
                 price = '6,95'
+                loading = 'lazy'
             />
             <Card id = '42'
                 name = 'Lomo, queso y huevos'
                 price = '6,85'
+                loading = 'lazy'
             />
             <Card id = '43'
                 name = 'Lomo, queso, lechuga, tomate y cebolla frita'
                 price = '7,25'
+                loading = 'lazy'
             />
             <Card id = '44'
                 name = 'Lomo, queso, lechuga y tomate'
                 price = '7,35'
+                loading = 'lazy'
             />
             <Card id = '45'
                 name = 'Lomo, jamón a la plancha, pimiento frito y tomate'
                 price = '7,50'
+                loading = 'lazy'
             />
             <Card id = '46'
                 name = 'Lomo, queso, paté, bacon, huevos, lechuga, tomate y cebolla frita'
                 price = '7,95'
+                loading = 'lazy'
             />
             <Card id = '47'
                 name = 'Bacon, queso y tomate'
                 price = '6,80'
+                loading = 'lazy'
             />
             <Card id = '48'
                 name = 'Bacon, queso, huevo y tomate'
                 price = '7,00'
+                loading = 'lazy'
             />
             <Card id = '49'
                 name = 'Bacon, queso y sobrasada'
                 price = '6,95'
+                loading = 'lazy'
             />
             <Card id = '50'
                 name = 'Paté, queso y tomate'
                 price = '6,90'
+                loading = 'lazy'
             />
             <Card id = '51'
                 name = 'Paté, queso, huevo y tomate'
                 price = '6,95'
+                loading = 'lazy'
             />
             <Card id = '52'
                 name = 'Paté, queso, bacon y tomate'
                 price = '7,25'
+                loading = 'lazy'
             />
             <Card id = '53'
                 name = 'Pechuga, tomate y mayonesa'
                 price = '6,95'
+                loading = 'lazy'
             />
             <Card id = '54'
                 name = 'Pechuga, queso y mayonesa'
                 price = '6,95'
+                loading = 'lazy'
             />
             <Card id = '55'
                 name = 'Pechuga, jamón a la plancha, lechuga, mayonesa y cebolla frita'
                 price = '7,95'
+                loading = 'lazy'
             />
             <Card id = '56'
                 name = 'Pechuga, bacon, huevo, queso y tomate'
                 price = '7,85'
+                loading = 'lazy'
             />
             <Card id = '57'
                 name = 'Ternera, tomate y ajoaceite'
                 price = '7,85'
+                loading = 'lazy'
             />
             <Card id = '58'
                 name = 'Ternera, queso y mayonesa'
                 price = '7,85'
+                loading = 'lazy'
             />
             <Card id = '59'
                 name = 'Ternera, jamón a la plancha, queso, ajoaceite y pimiento frito'
                 price = '7.95'
+                loading = 'lazy'
             />
             <Card id = '60'
                 name = 'Tortilla francesa con tomate'
                 price = '6.50'
+                loading = 'lazy'
             />
             <Card id = '61'
                 name = 'Tortilla al gusto'
                 description = 'Jamón, atún o queso'
                 price = '6.95'
+                loading = 'lazy'
             />
             <Card id = '62'
                 name = 'Tortilla de gambas con ajoaceite'
                 price = '7.95'
+                loading = 'lazy'
             />
             <Card id = '63'
                 name = 'Tortilla de patatas con tomate o ajoaceite'
                 price = '6.35'
+                loading = 'lazy'
             />
-
         </>
     )
 }

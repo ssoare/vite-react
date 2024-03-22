@@ -2,6 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #main {
-    max-height: calc(100svh - 3rem);
-} */
+.hb {
+    width: 35px;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.hb1,
+.hb2,
+.hb3 {
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.hb1 {
+    top: 5px;
+}
+.hb2 {
+    top: 15px;
+}
+.hb3 {
+    top: 25px;
+}
+
+.hb1.active {
+    top: 15px;
+    rotate: calc(45deg + 360deg);
+    background: rgb(249 115 22);
+}
+.hb2.active {
+    scale: 0;
+}
+.hb3.active {
+    top: 15px;
+    rotate: calc(-45deg - 360deg);
+    background: rgb(249 115 22);
+}
+
+.hero {
+    height: calc(100svh - 3rem) ;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url('../images/heroImage.jpg') ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#contacto {
+    height: calc(100svh - 5rem)
+}
+
+.menu {
+    scrollbar-width: none;
+}
+
+.overflow-auto {
+    scrollbar-width: none;
+}

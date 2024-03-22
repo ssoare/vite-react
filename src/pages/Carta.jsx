@@ -1,4 +1,4 @@
-import '../css/cartaMenu.css'
+import '../css/index.css'
 import { useState } from 'react'
 import Tapas from '../pages/submenu/Tapas'
 import Ensaladas from '../pages/submenu/Ensaladas'

@@ -1,148 +1,131 @@
-const comidaVegetarianaPlatos = {
-    'Longaniza vegetal, tortilla francesa y patatas': { id: 110 , description: '', price: 10.95 , image: '' },
-    'Hamburguesa vegetal y huevo': { id: 111 , description: '', price: 10.50 , image: '' },
-    'Seitán a la plancha y huevo': { id: 112 , description: '', price: 10.50 , image: '' },
-    'Seitán a la plancha con salsa pimienta': { id: 113 , description: '', price: 10.50 , image: '' },
-    'Seitán, queso, champiñones y cebolla frita': { id: 114 , description: '', price: 11.95 , image: '' },
-    'Escalopines de seitán': { id: 115 , description: '', price: 10.95 , image: '' },
-    'Escalope de soja': { id: 116 , description: '', price: 10.50 , image: '' },
-    'Escalope de tofu': { id: 117 , description: '', price: 10.50 , image: '' },
-    'Tofú a la plancha con salsa pimienta': { id: 118 , description: '', price: 10.50 , image: '' },
-    'Parrillada de verdura': { id: 119 , description: 'Longaniza vegetal, seitán, tofú', price: 11.95 , image: '' }
+import Card from "../../components/Card"    
 
-}
-
-const comidaVegetarianaBocadillos = {
-    'Seitán, queso y huevo': { id: 100 , description: '', price: 7.50 , image: '' },
-    'Seitán, queso, lechuga, tomate y cebolla frita': { id: 101 , description: '', price: 7.75 , image: '' },
-    'Seitán, queso, huevo, lechuga, tomate y cebolla frita': { id: 102 , description: '', price: 7.85 , image: '' },
-    'Seitán, tomate, queso y pimiento frito': { id: 103 , description: '', price: 7.85 , image: '' },
-    'Longaniza vegetal, tomate y pimiento frito': { id: 104 , description: '', price: 8.50 , image: '' },
-    'Tofú, huevo y tomate': { id: 105 , description: '', price: 7.25 , image: '' },
-    'Tofú, huevo, lechuga, tomate y cebolla frita': { id: 106 , description: '', price: 7.25 , image: '' },
-    'Tofú, queso, huevo, lechuga y pimiento frito': { id: 107 , description: '', price: 7.25 , image: '' },
-    'Tortilla francesa, tomate y queso': { id: 108 , description: '', price: 6.50 , image: '' },
-    'Tortilla de patatas con tomate o ajoaceite': { id: 109 , description: '', price: 6.35 , image: '' }
-}
-
-const comidaVegetarianaHamburguesas = {
-    'Hamburguesa vegetal, queso y huevo': { id: 96 , description: '', price: 7.50 , image: '' },
-    'Hamburguesa vegetal, salsa barbacoa, lechuga, queso y huevo': { id: 97 , description: '', price: 7.60 , image: '' },
-    'Hamburguesa vegetal, queso, lechuga, tomate y cebolla frita': { id: 98 , description: '', price: 7.75 , image: '' },
-    'Hamburguesa vegetal, salsa roquefort, lechuga y huevo': { id: 99 , description: '', price: 7.85 , image: '' }
-}
-
-const comidaVegetarianaEnsaladas = {
-    'Ensalada de la casa' : { id: 93 , description: 'Lechuga variada, tomate, zanahoria, remolacha, maíz y huevo', price: 11.95 , image: '' },
-    'Ensalada de queso de cabra' : { id: 94 , description: 'Lechuga variada, queso de cabra, pasas, mermelada de tomate y vinagre balsámico', price: 11.95 , image: '' },
-    'Ensalada el rincón' : { id: 95 , description: 'Lechuga variada, tomate, pepino, queso feta y aceitunas', price: 10.50 , image: '' }
-}
-
-const comidaVegetarianaTapas = {
-    'Patatas con queso y salsa césar' : { id: 86 , description: '', price: 8.50 , image: '' },
-    'Croquetas boletus y setas' : { id: 87 , description: '(6 ud.)', price: 7.55 , image: '' },
-    'Croquetas de espinacas con queso azul' : { id: 88 , description: '(8 ud.)', price: 7.55 , image: '' },
-    'Champinones con salsa verde' : { id: 89 , description: '', price: 6.95 , image: '' },
-    'Ensaladilla rusa' : { id: 90 , description: '', price: 6.95 , image: '' },
-    'Parrillada de verdura' : { id: 91 , description: '', price: 6.80 , image: '' },
-    'Tempura de verdura con salsa de soja' : { id: 92 , description: '', price: 6.85 , image: '' }
-}
-
-function ComidaVegetariana() {
-    return(
+export default function ComidaVegetariana() {
+        return(
         <>
-            <div className='flex-col w-screen'>
-                <h1 className='text-center text-2xl font-semibold'>Tapas</h1>
-                <hr className='my-4 w-6/12 mx-auto' />
-            </div>
-            {Object.entries(comidaVegetarianaTapas).map(([name, details]) => (
-                    <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
-                    hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
-                        <img className="w-full"
-                        src="src/images/burger.png" alt="imagen" />
-                        <div className="flex justify-between items-center flex-grow">
-                            <div className='basis-5/6'>
-                                <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
-                                <p className="italic text-gray-600">{details.description}</p>
-                            </div>
-                            <p>{details.price.toFixed(2)}€</p>
-                        </div>
-                    </article>   
-                ))}
-            <div className='flex-col w-screen'>
-                <h1 className='text-center text-2xl font-semibold'>Ensaladas</h1>
-                <hr className='my-4 w-6/12 mx-auto' />
-            </div>
-            {Object.entries(comidaVegetarianaEnsaladas).map(([name, details]) => (
-                    <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
-                    hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
-                        <img className="w-full"
-                        src="src/images/burger.png" alt="imagen" />
-                        <div className="flex justify-between items-center flex-grow">
-                            <div className='basis-5/6'>
-                                <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
-                                <p className="italic text-gray-600">{details.description}</p>
-                            </div>
-                            <p>{details.price.toFixed(2)}€</p>
-                        </div>
-                    </article>   
-                ))}
-            <div className='flex-col w-screen'>
-                <h1 className='text-center text-2xl font-semibold'>Hamburguesas</h1>
-                <hr className='my-4 w-6/12 mx-auto' />
-            </div>
-            {Object.entries(comidaVegetarianaHamburguesas).map(([name, details]) => (
-                    <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
-                    hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
-                        <img className="w-full"
-                        src="src/images/burger.png" alt="imagen" />
-                        <div className="flex justify-between items-center flex-grow">
-                            <div className='basis-5/6'>
-                                <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
-                                <p className="italic text-gray-600">{details.description}</p>
-                            </div>
-                            <p>{details.price.toFixed(2)}€</p>
-                        </div>
-                    </article>   
-                ))}
-            <div className='flex-col w-screen'>
-                <h1 className='text-center text-2xl font-semibold'>Bocadillos</h1>
-                <hr className='my-4 w-6/12 mx-auto' />
-            </div>
-            {Object.entries(comidaVegetarianaBocadillos).map(([name, details]) => (
-                    <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
-                    hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
-                        <img className="w-full"
-                        src="src/images/burger.png" alt="imagen" />
-                        <div className="flex justify-between items-center flex-grow">
-                            <div className='basis-5/6'>
-                                <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
-                                <p className="italic text-gray-600">{details.description}</p>
-                            </div>
-                            <p>{details.price.toFixed(2)}€</p>
-                        </div>
-                    </article>   
-                ))}
-            <div className='flex-col w-screen'>
-                <h1 className='text-center text-2xl font-semibold'>Platos</h1>
-                <hr className='my-4 w-6/12 mx-auto' />
-            </div>
-            {Object.entries(comidaVegetarianaPlatos).map(([name, details]) => (
-                    <article className="border-2 w-[300px] h-[300px] p-4 rounded-lg shadow-lg flex flex-col justify-between 
-                    hover:scale-105 hover:bg-gray-100 cursor-pointer transition-all">
-                        <img className="w-full"
-                        src="src/images/burger.png" alt="imagen" />
-                        <div className="flex justify-between items-center flex-grow">
-                            <div className='basis-5/6'>
-                                <h3 className="text-lg font-semibold">{details.id}. {name}</h3>
-                                <p className="italic text-gray-600">{details.description}</p>
-                            </div>
-                            <p>{details.price.toFixed(2)}€</p>
-                        </div>
-                    </article>   
-                ))}
+            <h1 className="text-center text-2xl mt-12 mb-4 font-semibold underline flex-grow"> Tapas </h1>
+            <section className="flex flex-wrap gap-4 justify-center">
+                <Card id = '110'
+                    name = 'Longaniza vegetal, tortilla francesa y patatas'
+                    price = '10.95'
+                />
+                <Card id = '111'
+                    name = 'Hamburguesa vegetal y huevo'
+                    price = '10.50'
+                />
+                <Card id = '112'
+                    name = 'Seitán a la plancha y huevo'
+                    price = '10.50'
+                />
+                <Card id = '113'
+                    name = 'Seitán a la plancha con salsa pimienta'
+                    price = '10.50'
+                />
+                <Card id = '114'
+                    name = 'Seitán, queso, champiñones y cebolla frita'
+                    price = '11.95'
+                />
+                <Card id = '115'
+                    name = 'Escalopines de seitán'
+                    price = '10.95'
+                />
+                <Card id = '116'
+                    name = 'Escalope de soja'
+                    price = '10.50'
+                />
+                <Card id = '117'
+                    name = 'Escalope de tofu'
+                    price = '10.50'
+                />
+                <Card id = '118'
+                    name = 'Tofú a la plancha con salsa pimienta'
+                    price = '10.50'
+                />
+                <Card id = '119'
+                    name = 'Parrillada de verdura'
+                    price = '11.95'
+                />
+            </section>  
+
+            <h1 className="text-center text-2xl mt-12 mb-4 font-semibold underline"> Ensaladas </h1>
+            <section className="flex flex-wrap gap-4 justify-center">
+                <Card id = '93'
+                    name = 'Ensalada de la casa'
+                    price = '11.95'
+                />
+                <Card id = '94'
+                    name = 'Ensalada de queso de cabra'
+                    price = '11.95'
+                />
+                <Card id = '95'
+                    name = 'Ensalada el rincón'
+                    price = '10.50'
+                />
+            </section>
+
+            <h1 className="text-center text-2xl mt-12 mb-4 font-semibold underline flex-grow"> Hamburguesas </h1>
+            <section className="flex flex-wrap gap-4 justify-center">
+                <Card id = '96'
+                    name = 'Hamburguesa vegetariana, queso y huevo'
+                    price = '7.50'
+                />
+                <Card id = '97'
+                    name = 'Hamburguesa vegetariana, salsa barbacoa, lechuga, queso y huevo'
+                    price = '7.60'
+                />
+                <Card id = '98'
+                    name = 'Hamburguesa vegetariana, queso, lechuga, tomate y cebolla frita'
+                    price = '7.75'
+                />
+                <Card id = '99'
+                    name = 'Hamburguesa vegetariana, salsa roquefort, lechuga y huevo'
+                    price = '7.85'
+                />
+            </section>
+
+            <h1 className="text-center text-2xl mt-12 mb-4 font-semibold underline"> Bocadillos </h1>
+            <section className="flex flex-wrap gap-4 justify-center">
+                <Card id = '100'
+                    name = 'Seitán, queso y huevo'
+                    price = '7.50'
+                />
+                <Card id = '101'
+                    name = 'Seitán, queso, lechuga, tomate y cebolla frita'
+                    price = '7.75'
+                />
+                <Card id = '102'
+                    name = 'Seitán, queso, huevo, lechuga, tomate y cebolla frita'
+                    price = '7.85'
+                />
+                <Card id = '103'
+                    name = 'Seitán, tomate, queso y pimiento frito'
+                    price = '7.85'
+                />
+                <Card id = '104'
+                    name = 'Longaniza vegetariana, tomate y pimiento frito'
+                    price = '8.50'
+                />
+                <Card id = '105'
+                    name = 'Tofú, huevo y tomate'
+                    price = '7.25'
+                />
+                <Card id = '106'
+                    name = 'Tofú, huevo, lechuga, tomate y cebolla frita'
+                    price = '7.25'
+                />
+                <Card id = '107'
+                    name = 'Tofú, queso, huevo, lechuga y pimiento frito'
+                    price = '7.25'
+                />
+                <Card id = '108'
+                    name = 'Tortilla francesa, tomate y queso'
+                    price = '6.50'
+                />
+                <Card id = '109'
+                    name = 'Tortilla de patatas con tomate o ajoaceite'
+                    price = '6.35'
+                />
+            </section>
         </>
     )
 }
-
-export default ComidaVegetariana

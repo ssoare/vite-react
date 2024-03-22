@@ -44,7 +44,7 @@ export default function ComidaVegetariana() {
                     loading = 'lazy'
                 />
                 <Card id = '118'
-                    name = 'Tofú a la plancha con salsa pimienta'
+                    name = 'Tofu a la plancha con salsa pimienta'
                     price = '10.50'
                     loading = 'lazy'
                 />
@@ -117,17 +117,17 @@ export default function ComidaVegetariana() {
                     price = '8.50'
                 />
                 <Card id = '105'
-                    name = 'Tofú, huevo y tomate'
+                    name = 'Tofu, huevo y tomate'
                     price = '7.25'
                     loading = 'lazy'
                 />
                 <Card id = '106'
-                    name = 'Tofú, huevo, lechuga, tomate y cebolla frita'
+                    name = 'Tofu, huevo, lechuga, tomate y cebolla frita'
                     price = '7.25'
                     loading = 'lazy'
                 />
                 <Card id = '107'
-                    name = 'Tofú, queso, huevo, lechuga y pimiento frito'
+                    name = 'Tofu, queso, huevo, lechuga y pimiento frito'
                     price = '7.25'
                     loading = 'lazy'
                 />

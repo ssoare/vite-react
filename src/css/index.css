@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #main {
-    max-height: calc(100svh - 3rem);
-} */
+button.active {
+    background-color: orange;
+}

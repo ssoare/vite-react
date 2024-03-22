@@ -4,7 +4,7 @@ import { HiOutlinePhone } from "react-icons/hi";
 import { IoMailOutline } from "react-icons/io5";
 import { HiOutlineMapPin } from "react-icons/hi2";
 
-function Contacto() {
+export default function Contacto() {
     return(
         <>
             <section id='contacto'
@@ -38,5 +38,3 @@ function Contacto() {
         </>
     )
 }
-
-export default Contacto

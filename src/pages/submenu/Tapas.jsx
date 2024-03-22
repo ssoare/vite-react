@@ -1,6 +1,6 @@
 import Card from "../../components/Card";
 
-function Tapas() {
+export default function Tapas() {
     return(
         <>
             <Card id = '1'
@@ -93,5 +93,3 @@ function Tapas() {
         </>
     )
 }
-
-export default Tapas;

@@ -25,7 +25,6 @@ function Tapas() {
             />
             <Card id = '6' 
                 name = 'Gambas al ajillo' 
-                description = '' 
                 price = '11,00' 
             />
             <Card id = '7' 

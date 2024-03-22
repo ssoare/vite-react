@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <main id='main' className='max-h-svh top-0 overflow-auto'>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/carta" element={<Carta />} />

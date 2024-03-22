@@ -7,7 +7,8 @@ function Hero() {
                 <h1>El Rincón del Bocata</h1>
                 
                 <Link to='contacto'>
-                    <button className='bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded'>
+                    <button className='text-white text-xl bg-black/50 py-2 px-8 font-semibold rounded-xl border-2
+                                hover:bg-orange-500 hover:text-black transition'>
                         RESERVA
                     </button>
                 </Link>

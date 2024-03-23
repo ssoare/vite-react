@@ -7,8 +7,8 @@
     import Hamburguesas from "./submenu/Hamburguesas"
     import PlatosCombinados from "./submenu/PlatosCombinados"
     import Torraetas from "./submenu/Torraetas"
-    import MenuItem from "../components/MenuItem"
-    import MenuItemActive from "../components/MenuItemActive"
+    import MenuItem from "../components/SubmenuItem"
+    import MenuItemActive from "../components/SubmenuItemActive"
     import { useState } from "react"
 
     const menuItems = [

@@ -5,7 +5,7 @@ export default function ComidaVegetariana() {
         return(
         <>
             <h1 className="text-center text-2xl font-semibold underline w-screen"> Tapas </h1> 
-            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4
+            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4 mx-4
                                 lg:flex lg:flex-wrap lg:justify-center">
                 <Card id = '110'
                     name = 'Longaniza vegetal, tortilla francesa y patatas'
@@ -56,7 +56,7 @@ export default function ComidaVegetariana() {
             </section>  
 
             <h1 className="text-center text-2xl mt-12 font-semibold underline w-screen"> Ensaladas </h1> 
-            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4
+            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4 mx-4
                                 lg:flex lg:flex-wrap lg:justify-center">
                 <Card id = '93'
                     name = 'Ensalada de la casa'
@@ -73,7 +73,7 @@ export default function ComidaVegetariana() {
             </section>
 
             <h1 className="text-center text-2xl mt-12 font-semibold underline w-screen flex-grow"> Hamburguesas </h1> 
-            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4
+            <section className="grid grid-flow-col-dense overflow-auto gap-4 py-4 mx-4
                                 lg:flex lg:flex-wrap lg:justify-center">
                 <Card id = '96'
                     name = 'Hamburguesa vegetariana, queso y huevo'

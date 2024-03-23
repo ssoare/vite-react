@@ -1,10 +1,10 @@
-import '../css/index.css';
-import { Link } from "react-router-dom";
-import { useState } from 'react';
+import '../css/index.css'
+import { Link } from "react-router-dom"
+import { useState } from 'react'
 
 function Header() {
-    const [menu, setMenu] = useState();
-    const toggleMenu = () => { setMenu(!menu); };
+    const [menu, setMenu] = useState()
+    const toggleMenu = () => setMenu(!menu)
 
     return (
         <header className='fixed top-0 flex justify-center bg-white/90 h-12 w-screen'>

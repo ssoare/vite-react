@@ -1,98 +1,52 @@
-import '../css/index.css'
-import { useState } from 'react'
-import Tapas from '../pages/submenu/Tapas'
-import Ensaladas from '../pages/submenu/Ensaladas'
-import Torraetas from '../pages/submenu/Torraetas'
-import Sandwiches from '../pages/submenu/Sandwiches'
-import Bocadillos from '../pages/submenu/Bocadillos'
-import Hamburguesas from '../pages/submenu/Hamburguesas'
-import PlatosCombinados from '../pages/submenu/PlatosCombinados'
-import ComidaVegetariana from '../pages/submenu/ComidaVegetariana'
-import Infantil from '../pages/submenu/Infantil'
-function Carta() {
-    const [submenu, setSubmenu] = useState('tapas')
-    return(
-        <>
-            <nav className='mt-20 '>
-                <ul className="menu flex gap-2 px-4 overflow-auto whitespace-nowrap xl:justify-center">
-                    <li onClick={() => setSubmenu('tapas')}
-                        className={
-                            submenu === 'tapas' 
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all' 
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer' }>
-                        Tapas
-                    </li>
-                    <li onClick={() => setSubmenu('ensaladas')}
-                        className={
-                            submenu === 'ensaladas' 
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all' 
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer'}>
-                        Ensaladas
-                    </li>
-                    <li onClick={() => setSubmenu('torraetas')}
-                        className={ 
-                            submenu === 'torraetas' 
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all' 
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer'}>
-                        Torraetas
-                    </li>
-                    <li onClick={() => setSubmenu('sandwiches')}
-                        className={
-                            submenu === 'sandwiches'
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all'
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer' }>
-                        Sandwiches
-                    </li>
-                    <li onClick={() => setSubmenu('bocadillos')}
-                        className={
-                            submenu === 'bocadillos'
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all'
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer' }>
-                        Bocadillos
-                    </li>
-                    <li onClick={() => setSubmenu('hamburguesas')}
-                        className={
-                            submenu === 'hamburguesas'
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all'
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer' }>
-                        Hamburguesas
-                    </li>
-                    <li onClick={() => setSubmenu('platos combinados')}
-                        className={
-                            submenu === 'platos combinados'
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all'
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer' }>
-                        Platos Combinados
-                    </li>
-                    <li onClick={() => setSubmenu('infantil')}
-                        className={
-                            submenu === 'infantil'
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all'
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer' }>
-                        Infantil
-                    </li>
-                    <li onClick={() => setSubmenu('comida vegetariana')}
-                        className={
-                            submenu === 'comida vegetariana'
-                            ? 'px-4 py-2 border-2 rounded-full cursor-pointer bg-orange-500 text-white transition-all'
-                            : 'px-4 py-2 border-2 rounded-full cursor-pointer' }>
-                        Comida Vegetariana
-                    </li>
-                </ul>
-            </nav>
-                <section className='flex gap-4 p-4 mt-8 justify-center flex-wrap'>
-                    { submenu === 'tapas' && <Tapas />}
-                    { submenu === 'ensaladas' && <Ensaladas />}
-                    { submenu === 'torraetas' && <Torraetas />}
-                    { submenu === 'sandwiches' && <Sandwiches />}
-                    { submenu === 'bocadillos' && <Bocadillos />}
-                    { submenu === 'hamburguesas' && <Hamburguesas />}
-                    { submenu === 'platos combinados' && <PlatosCombinados />}
-                    { submenu === 'infantil' && <Infantil />}
-                    { submenu === 'comida vegetariana' && <ComidaVegetariana />}
-                </section>
-        </>
-    )
-}
+    import Tapas from "./submenu/Tapas"
+    import Infantil from "./submenu/Infantil"
+    import Sandwiches from "./submenu/Sandwiches"
+    import Ensaladas from "./submenu/Ensaladas"
+    import Bocadillos from "./submenu/Bocadillos"
+    import ComidaVegetariana from "./submenu/ComidaVegetariana"
+    import Hamburguesas from "./submenu/Hamburguesas"
+    import PlatosCombinados from "./submenu/PlatosCombinados"
+    import Torraetas from "./submenu/Torraetas"
+    import MenuItem from "../components/MenuItem"
+    import MenuItemActive from "../components/MenuItemActive"
+    import { useState } from "react"
 
-export default Carta
+    const menuItems = [
+        'Tapas',
+        'Ensaladas',
+        'Torraetas',
+        'Sandwiches',
+        'Hamburguesas',
+        'Bocadillos',
+        'Platos Combinados',
+        'Infantil',
+        'Comida Vegetariana',
+    ]
+
+    export default function Carta() {
+        const [menu, setMenu] = useState('Tapas');
+        return(
+            <>
+                <section id='submenu' 
+                        className="mt-20 mx-4 whitespace-nowrap overflow-auto flex lg:justify-center py-1">
+                    {menuItems.map(item => (
+                    menu === item
+                    ? <MenuItemActive key={item} name={item} click={() => setMenu(item)} /> 
+                    : <MenuItem key={item} name={item} click={() => setMenu(item)} />
+            ))}
+                </section>
+
+                <section className="flex flex-wrap justify-center gap-4 mt-8 ">
+                    { menu === 'Tapas' && <Tapas /> }
+                    { menu === 'Torraetas' && <Torraetas /> }
+                    { menu === 'Ensaladas' && <Ensaladas /> }
+                    { menu === 'Sandwiches' && <Sandwiches /> }
+                    { menu === 'Hamburguesas' && <Hamburguesas /> }
+                    { menu === 'Bocadillos' && <Bocadillos /> }
+                    { menu === 'Platos Combinados' && <PlatosCombinados /> }
+                    { menu === 'Infantil' && <Infantil /> }
+                    { menu === 'Comida Vegetariana' && <ComidaVegetariana /> }
+                </section>
+            </>
+        );
+    }

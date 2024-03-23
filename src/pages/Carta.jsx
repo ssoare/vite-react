@@ -8,7 +8,7 @@
     import PlatosCombinados from "./submenu/PlatosCombinados"
     import Torraetas from "./submenu/Torraetas"
     import SubmenuItemActive from '../components/SubmenuItemActive'
-    import SubmenuItem from "../components/SubMenuItem"
+    import SubmenuItem from "../components/SubemenuItem"
     import { useState } from "react"
 
     const menuItems = [

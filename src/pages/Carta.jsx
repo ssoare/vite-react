@@ -7,8 +7,8 @@
     import Hamburguesas from "./submenu/Hamburguesas"
     import PlatosCombinados from "./submenu/PlatosCombinados"
     import Torraetas from "./submenu/Torraetas"
-    import MenuItem from "../components/SubmenuItem"
-    import MenuItemActive from "../components/SubmenuItemActive"
+    import SubmenuItem from '../components/SubmenuItem'
+    import SubmenuItemActive from '../components/SubmenuItemActive'
     import { useState } from "react"
 
     const menuItems = [
@@ -31,8 +31,8 @@
                         className="mt-20 mx-4 whitespace-nowrap overflow-auto flex lg:justify-center py-1">
                     {menuItems.map(item => (
                     menu === item
-                    ? <MenuItemActive key={item} name={item} click={() => setMenu(item)} /> 
-                    : <MenuItem key={item} name={item} click={() => setMenu(item)} />
+                    ? <SubmenuItemActive key={item} name={item} click={() => setMenu(item)} /> 
+                    : <SubmenuItem key={item} name={item} click={() => setMenu(item)} />
             ))}
                 </section>
 

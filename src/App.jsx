@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Carta from './pages/Carta'
 import Contacto from './pages/Contacto'
 import Header from './components/Header'
+import Menu from './pages/Menu'
 import './css/index.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/carta" element={<Carta />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path='/menu' element={<Menu />} />
         </Routes>
       </main>
     </>

@@ -27,6 +27,11 @@ function Header() {
                     </li>
                     <li className='px-4 py-2'>
                         <Link className='after:w-0 after:bg-black after:h-px after:block hover:after:w-full after:transition-all' 
+                                to="menu" onClick={toggleMenu}>Menu
+                        </Link> 
+                    </li>
+                    <li className='px-4 py-2'>
+                        <Link className='after:w-0 after:bg-black after:h-px after:block hover:after:w-full after:transition-all' 
                                 to="contacto" onClick={toggleMenu}>Contacto
                         </Link> 
                     </li>

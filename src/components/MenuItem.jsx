@@ -1,9 +1,8 @@
-export default function(name) {
+export default function Menu({name, price}) {
     return(
-        <li className='px-4 py-2'>
-            <Link className='after:w-0 after:bg-black after:h-px after:block hover:after:w-full after:transition-all' 
-                    to="" onClick={toggleMenu}>{name}
-            </Link> 
-        </li>
+        <article className="flex justify-between max-w-screen-md mx-auto">
+            <h1 className="text-lg">{name}</h1>
+            <p>{price}€</p>
+        </article>
     )
 }

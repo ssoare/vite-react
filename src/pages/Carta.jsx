@@ -7,11 +7,11 @@
     import Hamburguesas from "./submenu/Hamburguesas"
     import PlatosCombinados from "./submenu/PlatosCombinados"
     import Torraetas from "./submenu/Torraetas"
+    import SubmenuItem from '../components/SubmenuItem.jsx'
     import SubmenuItemActive from '../components/SubmenuItemActive'
-    import SubmenuItem from "../components/SubemenuItem"
     import { useState } from "react"
 
-    const menuItems = [
+    const SubmenuItems = [
         'Tapas',
         'Ensaladas',
         'Torraetas',
@@ -29,7 +29,7 @@
             <>
                 <section id='submenu' 
                         className="mt-20 mx-4 whitespace-nowrap overflow-auto flex lg:justify-center py-1">
-                    {menuItems.map(item => (
+                    {SubmenuItems.map(item => (
                     menu === item
                     ? <SubmenuItemActive key={item} name={item} click={() => setMenu(item)} /> 
                     : <SubmenuItem key={item} name={item} click={() => setMenu(item)} />

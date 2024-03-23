@@ -16,10 +16,11 @@
         'Ensaladas',
         'Torraetas',
         'Sandwiches',
-        'Bocadillos',
-        'Comida Vegetariana',
         'Hamburguesas',
-        'Platos Combinados'
+        'Bocadillos',
+        'Platos Combinados',
+        'Infantil',
+        'Comida Vegetariana',
     ]
 
     export default function Carta() {

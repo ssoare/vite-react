@@ -8,23 +8,31 @@
     import PlatosCombinados from "./submenu/PlatosCombinados"
     import Torraetas from "./submenu/Torraetas"
     import MenuItem from "../components/MenuItem"
+    import MenuItemActive from "../components/MenuItemActive"
     import { useState } from "react"
+
+    const menuItems = [
+        'Tapas',
+        'Ensaladas',
+        'Torraetas',
+        'Sandwiches',
+        'Bocadillos',
+        'Comida Vegetariana',
+        'Hamburguesas',
+        'Platos Combinados'
+    ]
 
     export default function Carta() {
         const [menu, setMenu] = useState('Tapas');
-
         return(
             <>
-                <section id='submenu' className="mt-20 mx-4 whitespace-nowrap overflow-auto">
-                    <MenuItem name='Tapas' click={() => setMenu('Tapas')} />
-                    <MenuItem name='Ensaladas' click={() => setMenu('Ensaladas')} />
-                    <MenuItem name='Torraetas' click={() => setMenu('Torraetas')} />
-                    <MenuItem name='Sandwiches' click={() => setMenu('Sandwiches')} />
-                    <MenuItem name='Bocadillos' click={() => setMenu('Bocadillos')} />
-                    <MenuItem name='Hamburguesas' click={() => setMenu('Hamburguesas')} />
-                    <MenuItem name='Platos Combinados' click={() => setMenu('Platos Combinados')} />
-                    <MenuItem name='Infantil' click={() => setMenu('Infantil')} />
-                    <MenuItem name='Comida Vegetariana' click={() => setMenu('Comida Vegetariana')} />
+                <section id='submenu' 
+                        className="mt-20 mx-4 whitespace-nowrap overflow-auto flex lg:justify-center">
+                    {menuItems.map(item => (
+                    menu === item
+                    ? <MenuItemActive key={item} name={item} click={() => setMenu(item)} /> 
+                    : <MenuItem key={item} name={item} click={() => setMenu(item)} />
+            ))}
                 </section>
 
                 <section className="flex flex-wrap justify-center gap-4 mt-8">

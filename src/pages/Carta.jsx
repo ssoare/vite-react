@@ -27,7 +27,7 @@
         return(
             <>
                 <section id='submenu' 
-                        className="mt-20 mx-4 whitespace-nowrap overflow-auto flex lg:justify-center">
+                        className="mt-20 mx-4 whitespace-nowrap overflow-auto flex lg:justify-center py-1">
                     {menuItems.map(item => (
                     menu === item
                     ? <MenuItemActive key={item} name={item} click={() => setMenu(item)} /> 
@@ -35,16 +35,16 @@
             ))}
                 </section>
 
-                <section className="flex flex-wrap justify-center gap-4 mt-8">
+                <section className="flex flex-wrap justify-center gap-4 mt-8 ">
                     { menu === 'Tapas' && <Tapas /> }
-                    { menu === 'Infantil' && <Infantil /> }
+                    { menu === 'Torraetas' && <Torraetas /> }
                     { menu === 'Ensaladas' && <Ensaladas /> }
                     { menu === 'Sandwiches' && <Sandwiches /> }
-                    { menu === 'Bocadillos' && <Bocadillos /> }
-                    { menu === 'Comida Vegetariana' && <ComidaVegetariana /> }
                     { menu === 'Hamburguesas' && <Hamburguesas /> }
+                    { menu === 'Bocadillos' && <Bocadillos /> }
                     { menu === 'Platos Combinados' && <PlatosCombinados /> }
-                    { menu === 'Torraetas' && <Torraetas /> }
+                    { menu === 'Infantil' && <Infantil /> }
+                    { menu === 'Comida Vegetariana' && <ComidaVegetariana /> }
                 </section>
             </>
         );

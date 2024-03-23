@@ -1,5 +1,5 @@
 import Card from "../../components/Card"    
-import '../../css/style.css'
+import '../../css/index.css'
 
 export default function ComidaVegetariana() {
         return(

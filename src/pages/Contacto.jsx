@@ -1,4 +1,4 @@
-import '../css/contacto.css'
+import '../css/index.css'
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { HiOutlinePhone } from "react-icons/hi";
 import { IoMailOutline } from "react-icons/io5";

@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import "./css/index.css";
 import App from "./App";
-import ErrorPage from "./pages/ErrorPage";
+import ErrorPage from "./ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +26,6 @@ const router = createBrowserRouter([
         element: <App />,
       },
     ],
-
     errorElement: <ErrorPage />,
   },
 ]);

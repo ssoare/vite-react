@@ -1,6 +1,6 @@
-import burger from '../images/burger.png'
+import burger from "../images/burger.png"
 
-function Card({name, image = {burger}, price, description = '', id = '', loading = ''}) {
+function Card({name, image = `${burger}`, price, description = '', id = '', loading = ''}) {
     return(
         <article className='w-[300px] border-2 rounded-lg shadow-lg p-4'>
             <img src={image} loading="lazy"/>

@@ -1,9 +1,11 @@
 import Card from "../../components/Card";
+import burger from '../../images/burger.png'
 
 export default function Tapas() {
     return(
         <>
-            <Card id = '1' name = 'Patatas fritas' price = '6,25' />
+            <Card id = '1' name = 'Patatas fritas' price = '6,25' image="../../src/images/burger.png"/>
+            <img src={burger} alt="" />
             <Card id = '2' name = 'Patatas bravas' price = '7,50' />
             <Card id = '3' name = 'Patatas con queso, bacon y salsa césar' price = '8,95' />
             <Card id = '4' name = 'Ensaladilla rusa' price = '6,95' />

@@ -35,7 +35,6 @@
 }
 .hb2.active {
     scale: 0;
-    background: url('/src/images/burger.png')
 }
 .hb3.active {
     top: 15px;

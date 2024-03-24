@@ -17,7 +17,7 @@ function Header() {
                                 lg:translate-x-0 lg:size-auto lg:static lg:flex-row lg:bg-transparent lg:text-black lg:text-2xl`}>
                     <li className='px-4 py-2'>
                         <Link className='after:w-0 after:bg-black after:h-px after:block hover:after:w-full after:transition-all' 
-                                to="" onClick={toggleMenu}>Inicio
+                                to="" onClick={toggleMenu}>Home
                         </Link> 
                     </li>
                     <li className='px-4 py-2'>

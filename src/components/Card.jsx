@@ -1,4 +1,4 @@
-function Card({name, image='/rincon/src/images/burger.png', price, description = '', id = '', loading = ''}) {
+function Card({name, image='../../src/images/burger.png', price, description = '', id = '', loading = ''}) {
     return(
         <article className='w-[300px] border-2 rounded-lg shadow-lg p-4'>
             <img src={image} loading="lazy"/>

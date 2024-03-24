@@ -4,10 +4,9 @@ import burger from '../../images/burger.png'
 export default function Tapas() {
     return(
         <>
-            <Card id = '1' name = 'Patatas fritas' price = '6,25' image="../../src/images/burger.png"/>
-            <img src={burger} alt="" />
+            <Card id = '1' name = 'Patatas fritas' price = '6,25' image= {burger} />
             <Card id = '2' name = 'Patatas bravas' price = '7,50' />
-            <Card id = '3' name = 'Patatas con queso, bacon y salsa césar' price = '8,95' />
+            <Card id = '3' name = 'Patatas con queso, bacon y salsa césar' price = '8,95' image={burger}/>
             <Card id = '4' name = 'Ensaladilla rusa' price = '6,95' />
             <Card id = '5' name = 'Calamares' price = '10,50' loading = 'lazy' />
             <Card id = '6' name = 'Gambas al ajillo' price = '11,00' loading = 'lazy' />

@@ -45,7 +45,7 @@
 .hero {
     height: calc(100svh - 5rem) ;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('../images/heroImage.jpg') ;
+                url('heroImage.jpg') ;
     background-size: cover;
     background-position: center;
     color: white;
@@ -53,8 +53,4 @@
 
 .overflow-auto {
     scrollbar-width: none;
-}
-
-#contacto {
-    height: calc(100svh - 5rem)
 }

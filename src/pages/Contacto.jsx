@@ -8,7 +8,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 export default function Contacto() {
     return(
         <>
-            <section id='contacto' className="mt-20 h-[calc(100svh - 5rem)] grid justify-center">
+            <section className="mt-20 h-[calc(100svh - 5rem)] grid justify-center">
                 <a className="text-blue-500 p-4 text-lg font-semibold flex gap-4 items-center justify-center"
                     rel='noreferrer noopenner'
                     href="tel:+34964964964">

@@ -45,7 +45,7 @@
 .hero {
     height: calc(100svh - 5rem) ;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('heroImage.jpg') ;
+                url('images/heroImage.jpg') ;
     background-size: cover;
     background-position: center;
     color: white;

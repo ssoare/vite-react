@@ -28,7 +28,7 @@
         return(
             <>
                 <section id='submenu' 
-                        className="mt-20 mx-4 whitespace-nowrap overflow-auto flex lg:justify-center py-1">
+                        className="mt-20 mx-4 whitespace-nowrap overflow-auto flex xl:justify-center py-1">
                     {SubmenuItems.map(item => (
                     menu === item
                     ? <SubmenuItemActive key={item} name={item} click={() => setMenu(item)} /> 
